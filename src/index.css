@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-600 antialiased;
+    @apply dark:bg-[#0a0a12] dark:text-slate-300;
+    font-feature-settings: 'ss01', 'cv01', 'cv11';
+  }
+
+  /* Headings use the display family, tighter and balanced */
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tightest;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    @apply bg-accent-500/20 text-accent-800 dark:text-accent-100;
+  }
+
+  /* Custom scrollbar — quiet, theme-aware */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300/80 dark:bg-slate-700/80 rounded-full;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-600;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-500 ring-offset-2 ring-offset-slate-50 dark:ring-offset-[#0a0a12] rounded;
+  }
+}
+
+@layer components {
+  /* Small technical label — deliberate mono system for a dev portfolio */
+  .mono-label {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.14em] text-accent-600 dark:text-accent-400;
+  }
+
+  /* Hairline divider that fades at the ends */
+  .rule-fade {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgb(203 213 225 / 0.9),
+      transparent
+    );
+  }
+  .dark .rule-fade {
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgb(51 65 85 / 0.9),
+      transparent
+    );
+  }
+
+  /* Skeleton shimmer for placeholder blocks */
+  .skeleton {
+    @apply relative overflow-hidden bg-slate-200/70 dark:bg-slate-800/70 rounded-lg;
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    animation: shimmer 1.8s infinite;
+  }
+  .dark .skeleton::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  }
+}
+
+@layer utilities {
+  /* Ambient radial wash used behind the sidebar / hero for depth */
+  .bg-ambient {
+    background-image: radial-gradient(
+      120% 90% at 0% 0%,
+      rgb(99 91 244 / 0.06),
+      transparent 55%
+    );
+  }
+  .dark .bg-ambient {
+    background-image: radial-gradient(
+      120% 90% at 0% 0%,
+      rgb(99 91 244 / 0.12),
+      transparent 55%
+    );
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

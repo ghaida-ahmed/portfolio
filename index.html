@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#635bf4" />
+    <meta
+      name="description"
+      content="Portfolio of Ghaida Ahmed Almughamis, a Software Engineering student specializing in full-stack development, software engineering, and AI integration. Explore my projects, technical skills, and experience."
+    />
+    <meta name="author" content="Ghaida Ahmed Almughamis" />
+
+    <!-- Canonical + social URL. NOTE: update this base URL to the real Vercel domain once confirmed. -->
+    <link rel="canonical" href="https://ghaida-almughamis.vercel.app/" />
+
+    <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ghaida Almughamis — Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://ghaida-almughamis.vercel.app/" />
+    <meta property="og:title" content="Ghaida Almughamis | Software Engineering Student" />
+    <meta
+      property="og:description"
+      content="Portfolio of Ghaida Ahmed Almughamis, a Software Engineering student specializing in full-stack development, software engineering, and AI integration. Explore my projects, technical skills, and experience."
+    />
+    <meta property="og:image" content="https://ghaida-almughamis.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ghaida Almughamis — Software Engineering Student" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ghaida Almughamis | Software Engineering Student" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Ghaida Ahmed Almughamis, a Software Engineering student specializing in full-stack development, software engineering, and AI integration."
+    />
+    <meta name="twitter:image" content="https://ghaida-almughamis.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Ghaida Almughamis — Software Engineering Student" />
+
+    <!-- Fonts: Cabinet Grotesk (display) + Switzer (body) via Fontshare, JetBrains Mono via Google -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f%5B%5D=cabinet-grotesk@500,700,800&f%5B%5D=switzer@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent theme flash: apply saved/system theme before paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Ghaida Almughamis | Software Engineering Student</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

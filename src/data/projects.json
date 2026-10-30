@@ -1,0 +1,78 @@
+{
+  "$schema": "Each project card. `featured: true` renders in the Featured Projects grid; the rest appear under Other Projects.",
+  "$example": {
+    "id": "unique-slug",
+    "title": "Project title",
+    "featured": true,
+    "description": "One or two sentence summary shown on the card.",
+    "longDescription": "Extended description shown inside the modal.",
+    "image": "/assets/projects/example-cover.png",
+    "screenshots": [
+      "/assets/projects/example-1.png",
+      "/assets/projects/example-2.png"
+    ],
+    "tags": ["React", "TypeScript", "Node.js"],
+    "demoVideo": "/assets/projects/example-demo.mp4",
+    "githubUrl": "https://github.com/username/repo",
+    "liveUrl": "https://example.com"
+  },
+  "projects": [
+    {
+      "id": "athar",
+      "title": "ATHAR | أثر",
+      "featured": true,
+      "description": "Digital Observatory for Saudi Gig Economy Activity.",
+      "longDescription": "ATHAR (أثر) was developed during the Data Innovation Hackathon organized by the General Authority for Statistics (GASTAT) in Saudi Arabia. It is a digital observatory platform designed to analyze and visualize gig economy activities across Saudi cities using various digital indicators. The platform transforms raw data into interactive insights and dashboards to support data-driven decision-making.",
+      "image": "/assets/projects/ATHAR/cover.png",
+      "tags": ["Python", "Pandas", "Plotly", "Streamlit", "Data Analytics", "Data Visualization"],
+      "demoVideo": "/assets/demos/ATHAR-demo.mp4",
+      "githubUrl": "https://github.com/ghaida-ahmed/ATHAR",
+      "liveUrl": "https://gkthb6youepzhwpksasznz.streamlit.app/"
+    },
+    {
+      "id": "littlelens",
+      "title": "LittleLens | عدسة الطفل",
+      "featured": true,
+      "description": "AI-Powered YouTube Content Safety Analyzer.",
+      "longDescription": "LittleLens is a bilingual web application designed to help parents evaluate the safety and suitability of YouTube content for children. Parents can paste a YouTube video link and receive a clear safety report covering child safety, age suitability, educational value, overstimulation risk, addiction risk, AI-generated content, music/noise intensity, and community feedback. The platform combines a transparent rule-based scoring engine with YouTube data and AI-powered analysis to provide understandable insights and recommendations for parents.",
+      "image": "/assets/projects/LittleLens/cover.png",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "YouTube Data API v3", "Google Gemini", "OpenAI", "Vercel"],
+      "demoVideo": "/assets/demos/LittleLens-demo.mp4",
+      "githubUrl": "https://github.com/ghaida-ahmed/littlelens-ai",
+      "liveUrl": "https://littlelens.vercel.app/"
+    },
+    {
+      "id": "cyber-kids-academy",
+      "title": "Cyber Kids Academy",
+      "featured": true,
+      "description": "A full-stack web application designed to teach children cybersecurity and online safety through interactive learning, with role-based experiences and integrated data management.",
+      "longDescription": "Cyber Kids Academy is a full-stack web application designed to provide an interactive cybersecurity learning environment for children. The platform combines a responsive frontend with Supabase-powered backend services, database integration, and role-based functionality for children, parents, teachers, and administrators. It includes interactive lessons, quizzes, educational games, progress tracking, and dedicated dashboards, with user data and learning progress managed through the backend.",
+      "image": "/assets/projects/CyberKids/cover.png",
+      "tags": ["HTML5", "CSS3", "JavaScript", "Supabase", "Supabase JavaScript Client", "jsPDF"],
+      "githubUrl": "https://github.com/ghaida-ahmed/CyberKids_final_project"
+    },
+    {
+      "id": "anchor",
+      "title": "ANCHOR",
+      "featured": true,
+      "description": "A full-stack adaptive learning platform with a Retrieval-Augmented Generation pipeline that grounds AI tutoring in a student's own course materials, built on React, FastAPI, and PostgreSQL/pgvector.",
+      "longDescription": "ANCHOR is a full-stack AI web application that turns a student's own course materials into an adaptive study workspace. A React and TypeScript single-page frontend talks to a FastAPI backend, where uploaded documents are ingested, chunked, embedded, and stored in PostgreSQL with pgvector for semantic vector retrieval. A Retrieval-Augmented Generation pipeline grounds every AI-generated answer in the student's material and cites its source, with Google Gemini handling generation and short-answer grading. A deterministic engine tracks mastery, retention decay, and knowledge gaps to adaptively select what to practice next, all behind JWT authentication with user-specific data. The platform runs in production with the React SPA deployed on Vercel and a containerized FastAPI backend.",
+      "image": "/assets/projects/ANCHOR/cover.png",
+      "tags": ["React", "TypeScript", "FastAPI", "PostgreSQL", "pgvector", "Google Gemini", "RAG"],
+      "demoVideo": "/assets/demos/ANCHOR-demo.mp4",
+      "githubUrl": "https://github.com/ghaida-ahmed/anchor",
+      "liveUrl": "https://anchor-eight-iota.vercel.app"
+    },
+    {
+      "id": "easyrent-ksa",
+      "title": "EasyRent KSA",
+      "featured": false,
+      "description": "Car Rental Web Prototype.",
+      "longDescription": "EasyRent KSA is a desktop web prototype for a car rental platform, designed to provide a browser-based car rental browsing and booking experience. The prototype includes multiple screens, navigation, and a screen-based user flow with a green and white visual identity.",
+      "image": "/assets/projects/EasyRent/cover.png",
+      "tags": ["HTML", "CSS", "JavaScript", "Google Fonts"],
+      "demoVideo": "/assets/demos/EasyRent-demo.mp4",
+      "githubUrl": "https://github.com/ghaida-ahmed/easy-rent-ksa-desktop"
+    }
+  ]
+}

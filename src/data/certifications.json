@@ -1,0 +1,13 @@
+{
+  "$schema": "Certification cards.",
+  "$example": {
+    "id": "unique-slug",
+    "name": "Certification name",
+    "issuer": "Issuing organization",
+    "issueDate": "2024-05",
+    "credentialId": "ABC-123",
+    "credentialUrl": "https://verify.example.com/abc-123",
+    "image": "/assets/certifications/example-badge.png"
+  },
+  "certifications": []
+}

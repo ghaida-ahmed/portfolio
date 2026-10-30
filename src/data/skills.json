@@ -1,0 +1,10 @@
+{
+  "$schema": "Skills grouped into categories. Each category renders as its own block of icon cards. `icon` is a key from src/lib/skillIcons.js (e.g. code, react, database, cloud, docker, git); unknown keys fall back to a code glyph. `level` is optional (e.g. advanced, intermediate).",
+  "$example": {
+    "category": "Languages",
+    "items": [
+      { "name": "TypeScript", "icon": "code", "level": "advanced" }
+    ]
+  },
+  "categories": []
+}

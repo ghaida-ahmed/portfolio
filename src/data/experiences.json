@@ -1,0 +1,16 @@
+{
+  "$schema": "Timeline of experience & leadership entries. `type` distinguishes work / leadership / award for styling.",
+  "$example": {
+    "id": "unique-slug",
+    "type": "work",
+    "role": "Software Engineer",
+    "organization": "Company / Organization",
+    "location": "City, Country",
+    "startDate": "2023-01",
+    "endDate": "Present",
+    "description": "Short summary of the role.",
+    "achievements": ["Achievement one.", "Achievement two."],
+    "tags": ["React", "AWS"]
+  },
+  "experiences": []
+}
