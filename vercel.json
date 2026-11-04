@@ -1,9 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "ghaida-almughamis.vercel.app" }],
-      "destination": "https://ghaida-almughamis-portfolio.vercel.app/:path*",
+      "destination": "https://ghaida-almughamis-portfolio.vercel.app/$1",
       "permanent": true
     }
   ]
