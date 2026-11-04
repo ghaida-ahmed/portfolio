@@ -28,3 +28,5 @@ pnpm-debug.log*
 
 # Claude Code local dev tooling
 .claude/
+.vercel
+.env*
