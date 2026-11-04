@@ -8,7 +8,7 @@
 export const profile = {
   name: 'Ghaida Ahmed Almughamis',
   title: 'Software Engineering Student',
-  intro: 'Interested in AI, Web Development, and Innovative Software Solutions.',
+  intro: 'Software Development | AI Integration | Cloud & DevOps',
   avatar: '', // path to profile image, e.g. "/assets/avatar.jpg"
   cvUrl: '/assets/Ghaida_Almughamis_CV.pdf', // CV/resume PDF in public/assets
   email: 'ghaidahmed.tech@gmail.com',
